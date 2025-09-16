@@ -1,0 +1,19 @@
+module testbench();
+
+reg a = 2'b00;
+reg b = 2'b01;
+reg c = 2'b10;
+reg d = 2'b11;
+reg [1:0]e;
+wire f;
+
+MUX instance1(.a(a), .b(b), .c(c),.d(d), .e(e), .f(f));
+
+initial begin 
+#10 e = 2'b00;
+#10 e = 2'b01;
+#10 e = 2'b10;
+#10 e = 2'b11;
+end
+
+endmodule
