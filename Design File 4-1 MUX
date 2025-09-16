@@ -1,5 +1,5 @@
 
-module MUX(input a,input b, input c, input d, input[1:0] e, output reg[1:0] f);
+module MUX(input [1:0]a,input [1:0]b, input [1:0]c, input [1:0]d, input[1:0] e, output reg[1:0] f);
 
 always@(*) begin
 
